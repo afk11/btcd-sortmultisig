@@ -6,6 +6,7 @@ import (
 	"github.com/btcsuite/btcutil"
 	"log"
 	"fmt"
+	"github.com/afk11/sortmultisig/sortutil"
 )
 
 func main() {
@@ -52,7 +53,8 @@ func main() {
 	}
 	for i := 0; i < len(keys); i++ {
 		sig, ok := sigs[i]
-		fmt.Printf("idx %d (for %s) \n", i, hex.EncodeToString(keys[i].SerializeCompressed()))
+		key, _ := sortutil.FormatPublicKey(keys[i].Key, keys[i].Format)
+		fmt.Printf("idx %d (for %s) \n", i, hex.EncodeToString(key))
 		if ok {
 			fmt.Printf("  - %s \n", hex.EncodeToString(sig.Serialize()))
 		} else {

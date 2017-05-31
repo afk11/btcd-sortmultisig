@@ -1,8 +1,8 @@
 package: github.com/afk11/sortmultisig
 import:
 - package: github.com/btcsuite/btcd
-  version: 9935fe23eb302380e4f7a4d66efa1d7a6f3e100f
-  repo: https://github.com/afk11/btcd
+  version: f2d5ce1ad0ab3b42c18381531c1a92aa25c79f11
+  repo: https://github.com/btccom/btcd
   vcs: git
   subpackages:
   - chaincfg

@@ -1,0 +1,15 @@
+package: github.com/afk11/sortmultisig
+import:
+- package: github.com/btcsuite/btcd
+  version: 9935fe23eb302380e4f7a4d66efa1d7a6f3e100f
+  repo: https://github.com/afk11/btcd
+  vcs: git
+  subpackages:
+  - chaincfg
+  - chaincfg/chainhash
+  - txscript
+  - wire
+- package: github.com/btcsuite/btcutil
+  version: f70782bfd6bf84b1f09c379f8a1bbe37c6981397
+  repo: https://github.com/btccom/btcutil
+  vcs: git
